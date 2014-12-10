@@ -1,0 +1,17 @@
+{
+  "name": "browserify-pipe-issue",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "build_common": "cd lib && cat common.js | browserify -r ./robot.js - > ../built/common.js",
+    "build_beep": "cd lib && cat beep.js | browserify -x ./robot.js - > ../built/beep.js",
+    "build_bop": "cd lib && cat bop.js | browserify -x ./robot.js - > ../built/bop.js",
+    "build": "npm run build_common && npm run build_beep && npm run build_bop",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cymenvig@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "browserify": "^7.0.0"
+  }
+}

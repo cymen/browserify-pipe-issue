@@ -12,6 +12,6 @@
   "author": "cymenvig@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "browserify": "^7.0.0"
+    "browserify": "^4.2.3"
   }
 }
